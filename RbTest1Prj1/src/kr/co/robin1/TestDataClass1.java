@@ -18,4 +18,8 @@ public class TestDataClass1 {
 	public int getDouble() {
 		return idxNumber*2;
 	}
+
+	public int getDouble2() {
+		return idxNumber*2 + 2;
+	}
 }

@@ -20,6 +20,10 @@ public class TestDataClass1 {
 	}
 
 	public int getDouble1() {
-		return idxNumber*2 + 1;
+		return idxNumber*2 + 15;
+	}
+	
+	public int getDouble2() {
+		return 2;
 	}
 }

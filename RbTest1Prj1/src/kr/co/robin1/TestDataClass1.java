@@ -8,7 +8,7 @@ public class TestDataClass1 {
 	}
 	
 	public int getIdxNumber() {
-		return idxNumber;
+		return idxNumber*2;
 	}
 	
 	public void setIdxNumber(int idx) {

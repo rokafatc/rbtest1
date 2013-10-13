@@ -14,4 +14,8 @@ public class TestDataClass1 {
 	public void setIdxNumber(int idx) {
 		this.idxNumber = idx;
 	}
+	
+	public int getDouble() {
+		return idxNumber*2;
+	}
 }

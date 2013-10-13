@@ -4,7 +4,7 @@ public class TestDataClass1 {
 	private int idxNumber;
 	
 	public TestDataClass1() {
-		this.idxNumber = 10;
+		this.idxNumber = 0;
 	}
 	
 	public int getIdxNumber() {

@@ -24,6 +24,6 @@ public class TestDataClass1 {
 	}
 	
 	public int getDouble2() {
-		return 2;
+		return idxNumber*2 + 10;
 	}
 }

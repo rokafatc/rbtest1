@@ -49,27 +49,26 @@ public class Test1 {
 //				Employee emp = (Employee)session.selectOne("kr.co.robin1.rbdata.emp.EmpMapper.selectEmpOne", 192);
 //				System.out.println(String.format("Name: %s, %s", emp.getFirst_Name(), emp.getLast_Name()));
 				//
-				Employee emp = (Employee)session.selectOne("kr.co.robin1.rbdata.emp.EmpMapper.selectEmpOne", 992);
-				if (emp == null) {
-					System.out.println("Returned emp is null");
-					return;
-				}
+//				Employee emp = (Employee)session.selectOne("kr.co.robin1.rbdata.emp.EmpMapper.selectEmpOne", 992);
+//				if (emp == null) {
+//					System.out.println("Returned emp is null");
+//					return;
+//				}
 //				List<Employee> lstEmp = session.selectOne("kr.co.robin1.rbdata.emp.EmpMapper.selectEmpOne", 992);
 //				if (lstEmp == null) {
 //					System.out.println("Return is null");
 //					return;
 //				}
-				//System.out.println(String.format("Retrieved Result: %s", lstEmp.isEmpty()));
-				
-//				System.out.println(String.format("Retrieved Count: %d", lstEmp.size()));
 //				for(Employee emp: lstEmp) {
 //					System.out.println(String.format("Name: %s, %s", emp.getFirst_Name(), emp.getLast_Name()));
 //				}
 				//
-//				List<Employee> lstEmp = session.selectList("kr.co.robin1.rbdata.emp.EmpMapper.selectEmp");
-//				for(Employee emp: lstEmp) {
-//					System.out.println(String.format("All Name: %s, %s", emp.getFirst_Name(), emp.getLast_Name()));
-//				}
+				List<Employee> lstEmp = session.selectList("kr.co.robin1.rbdata.emp.EmpMapper.selectEmp");
+				System.out.println(String.format("Retrieved Result: %s", !lstEmp.isEmpty()));
+				System.out.println(String.format("Retrieved Count: %d", lstEmp.size()));
+				for(Employee emp: lstEmp) {
+					System.out.println(String.format("All Name: %s, %s", emp.getFirst_Name(), emp.getLast_Name()));
+				}
 				//
 //				List<Employee> lstEmp = session.selectList("kr.co.robin1.rbdata.emp.EmpMapper.selectEmpCond1", "peter");
 //				for(Employee emp: lstEmp) {
